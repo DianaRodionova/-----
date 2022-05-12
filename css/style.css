@@ -30,6 +30,7 @@
 :root {
   --basic-color: #FFFFFF;
   --basic-black: #000000;
+  --basic-dark: #666666;
   --basic-gray: #EEEEEE;
   --gray-hover: #DFDFDF;
   --gray-activ: #D5D5D5;
@@ -204,4 +205,85 @@ font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+}
+
+/* Statistics */
+
+.statistics h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.statistics dt {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.statistics sup {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.statistics dd {
+  text-transform: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+/* Clients */
+
+.clients-list {
+  list-style: none;
+}
+
+/* Footer */
+
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--basic-dark);
+}
+
+.contacts-phone {
+  color: var(--basic-dark);
+}
+
+.footer-social {
+  text-align: left;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  color: inherit;
+}
+
+.promo {
+  text-align: center;
+}
+
+.promo-header {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.promo-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
