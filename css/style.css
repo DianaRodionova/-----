@@ -31,6 +31,7 @@
   --basic-color: #FFFFFF;
   --basic-black: #000000;
   --basic-dark: #666666;
+  --basic-extra-dark: #283136;
   --basic-gray: #EEEEEE;
   --gray-hover: #DFDFDF;
   --gray-activ: #D5D5D5;
@@ -67,6 +68,16 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  background-color: var(--basic-gray);
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.main-header {
+  background-color: var(--basic-gray);
 }
 
 /* Site navigation */
@@ -286,4 +297,74 @@ font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+}
+
+/* Filters */
+
+.filter-group {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+  text-transform: none;
+  color: var(--basic-extra-dark);
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Sort */
+
+.sort-list{
+  list-style: none;
+}
+
+.sort-item a {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+/* Templates */
+
+.template-list{
+  list-style: none;
+}
+
+.template-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.template-item-title {
+  color: var(--basic-black);
+}
+
+.info-site {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-dark);
+  text-transform: none;
+}
+
+.template-item-description {
+  background-color: var(--basic-gray);
+  text-align: center;
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
 }
