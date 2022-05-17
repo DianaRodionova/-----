@@ -60,7 +60,7 @@
 }
 
 .page-body {
-  min-width: 1440px;
+  min-width: 1240px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -117,10 +117,14 @@ h1 {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 /* Logo */
+
+.page-header-bar {
+  background-color: var(--basic-gray);
+}
 
 .page-header-logo {
   justify-self: left;
@@ -130,16 +134,17 @@ h1 {
 
 .page-navigation {
   display: grid;
-  grid-template-columns: max-content 1fr min-content;
-  width: 1160px;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--basic-black);
-  background-color: var(--basic-gray);
 }
 
 .page-navigation-wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr min-content;
+  width: 1160px;
+  margin: 0 auto;
+  gap: 25px;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
   background-color: var(--basic-gray);
 }
 
@@ -173,6 +178,10 @@ h1 {
 }
 
 /* Features */
+
+.main-features {
+  background-color: var(--basic-gray);
+}
 
 .features {
   background-color: var(--basic-gray);
