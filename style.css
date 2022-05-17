@@ -106,33 +106,9 @@ h1 {
   background-color: var(--basic-gray);
 }
 
-/* Page-header */
-
-.page-header {
-  background-color: var(--basic-gray);
-}
-
-/* Container */
-
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-/* Logo */
-
-.page-header-logo {
-  justify-self: left;
-}
-
 /* Site navigation */
 
 .page-navigation {
-  display: grid;
-  grid-template-columns: max-content 1fr min-content;
-  width: 1160px;
-  margin: 0 auto;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
@@ -145,8 +121,6 @@ h1 {
 
 .site-navigation {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .site-navigation a:hover {
