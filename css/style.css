@@ -103,9 +103,14 @@ img {
 /* Main-header */
 
 h1 {
+  max-width: 1200px;
   background-color: var(--basic-gray);
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
+  padding-top: 78px;
+  padding-bottom: 85px;
+  margin-top: 0;
 }
 
 .main-header {
@@ -119,6 +124,7 @@ h1 {
 
 .page-header {
   background-color: var(--basic-gray);
+  margin: 0;
 }
 
 /* Container */
