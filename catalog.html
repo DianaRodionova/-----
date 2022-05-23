@@ -41,14 +41,12 @@
       <div class="page-catalog container">
       <section class="filters">
         <h2>Фильтр товаров</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend class="filter-group">Стоимость:</legend>
-
-            <input class="filter-input-range filter-input" type="range" id="filter-price" name="price" min="0" max="200000" step="1"><br>
-            до <output name="priceoutput">150 000</output>
-            <label for="filter-price">От<input type="text" id="filter-price" name="price" value="0"></label>
-            <label for="filter-price">До<input type="text" id="filter-price" name="price" value="150000"></label>
+            <input class="filter-input-range filter-input" type="range" id="filter" name="price" min="0" max="150000" step="1">
+            <label for="filter-price">От<input type="text" id="filter-price" name="min-price" value="0"></label>
+            <label for="filter-price">До<input type="text" id="filter-price" name="max-price" value="150 000"></label>
           </fieldset>
           <fieldset>
             <legend class="filter-group">Сетка:</legend>
@@ -97,7 +95,7 @@
       </section>
 
       <section class="sort">
-        <h2 class="filter-group">Сортировать:</h2>
+        <h2 class="filter-group heart-sort">Сортировать:</h2>
         <ul class="sort-list">
           <li class="sort-item">
             <a href="#">По цене</a>
