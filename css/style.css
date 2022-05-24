@@ -94,12 +94,6 @@ img {
   height: 100%;
 }
 
-.page-catalog {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  align-content: start;
-}
-
 /* Main-header */
 
 h1 {
@@ -583,9 +577,19 @@ font-weight: 400;
   color: var(--basic-gray-dark);
 }
 
+/* Grid */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 140px;
+  align-content: start;
+}
+
 /* Filters */
 
 .filters {
+  grid-row: 1 / 3;
   padding: 0;
   margin: 0;
 }
@@ -601,6 +605,8 @@ font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
 
 .filter ul {
@@ -629,6 +635,7 @@ font-weight: 400;
   grid-column: 2 / -1;
   padding: 0;
   margin: 0;
+  margin-bottom: 48px;
 }
 
 .heart-sort {
@@ -637,10 +644,12 @@ font-weight: 400;
 
 .sort-list{
   display: flex;
+  align-items: flex-start;
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sort-item a {
@@ -667,8 +676,18 @@ font-weight: 400;
   margin-left: 60px;
 }
 
-.template-list{
+.template-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.template-item {
+  padding: 0;
+  margin: 0;
 }
 
 .template-item h3 {
@@ -700,6 +719,8 @@ font-weight: 400;
 .template-item-description {
   background-color: var(--basic-gray);
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 /* Pagination */
