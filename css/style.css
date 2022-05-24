@@ -156,6 +156,7 @@ h1 {
   grid-template-columns: 160px 1fr min-content;
   width: 1160px;
   margin: 0 auto;
+  padding-top: 49px;
   gap: 25px;
   font-size: 16px;
   line-height: 30px;
@@ -215,6 +216,7 @@ h1 {
 
 .features {
   background-color: var(--basic-gray);
+  margin-bottom: 80px;
 }
 
 .features-list {
@@ -320,19 +322,21 @@ font-weight: 400;
   list-style: none;
 }
 
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
 .services-item p {
   text-transform: none;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  }
-
-.services-item h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  }
-
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
 
   /* index-column */
 
@@ -350,20 +354,33 @@ font-weight: 400;
 .company {
   grid-column-start: 1;
   grid-column-end: 3;
+  margin: 0;
+  padding: 0;
   }
-
-.company p {
-  text-transform: none;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
 
 .company .company-info {
   text-transform: none;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 32px;
+}
+
+.company .company-text {
+  text-transform: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.company h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .company-list {
@@ -372,12 +389,12 @@ font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
-.company h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
+.company-item {
+  margin-top: 24px;
 }
 
 /* Statistics */
@@ -386,12 +403,16 @@ font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
+  margin-top: 37px;
+  margin-bottom: 31px;
 }
 
 .statistics dl {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+  row-gap: 10px;
   margin: 0;
   padding: 0;
 }
@@ -426,18 +447,41 @@ font-weight: 400;
 .clients-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 95px;
+  column-gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.clients-item {
+  text-align: center;
+}
+
+.clients-item img {
+  opacity: 0.2;
+}
+
+.clients-item img:hover {
+  opacity: 1.0;
+}
+
+.clients-item img:active {
+  opacity: 0.1;
+}
+
 /* Footer */
+
+.contacts {
+  padding: 50px;
+}
 
 .contacts h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
 }
 
 .contacts p {
@@ -448,15 +492,23 @@ font-weight: 400;
   color: var(--basic-dark);
 }
 
+.contacts-address {
+  margin-bottom: 18px;
+}
+
 .contacts-phone {
   color: var(--basic-dark);
 }
 
+.contacts-phones {
+  margin-bottom: 37px;
+}
+
 .footer-columns {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 10px;
-  margin: 68px 240px 68px 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  margin-top: 68px;
 }
 
 .footer-social {
@@ -464,7 +516,12 @@ font-weight: 400;
 }
 
 .social-list {
+  display: flex;
   list-style: none;
+}
+
+.social-item {
+  padding-right: 9px;
 }
 
 .social-button {
@@ -472,7 +529,8 @@ font-weight: 400;
 }
 
 .promo {
-  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: -1;
 }
 
 .promo-header {
@@ -480,6 +538,8 @@ font-weight: 400;
   line-height: 36px;
   font-weight: 700;
   text-transform: none;
+  padding: 0;
+  margin: 0;
 }
 
 .promo-text {
