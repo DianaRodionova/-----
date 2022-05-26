@@ -609,6 +609,10 @@ font-weight: 400;
   margin: 0;
 }
 
+.filter legend {
+  margin-bottom: 13px;
+}
+
 .filter ul {
   list-style: none;
   text-transform: none;
@@ -616,6 +620,8 @@ font-weight: 400;
   line-height: 20px;
   font-size: 16px;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-input:hover + label {
@@ -685,14 +691,15 @@ font-weight: 400;
 }
 
 .template-item {
-  padding: 0;
-  margin: 0;
+  width: 358px;
+  min-height: 618px;
 }
 
 .template-item h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
 }
 
 .template-item-title {
@@ -707,19 +714,33 @@ font-weight: 400;
   color: var(--basic-black-active);
 }
 
+.catalog-item-image {
+  width: 358px;
+  height: 578px;
+  margin: 0;
+}
+
 .info-site {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-dark);
   text-transform: none;
+  padding: 0;
+  margin: 0;
 }
 
 .template-item-description {
   background-color: var(--basic-gray);
   text-align: center;
+  width: 358px;
   padding: 0;
   margin: 0;
+}
+
+.template-button {
+  margin-top: 32px;
+  margin-bottom: 44px;
 }
 
 /* Pagination */
