@@ -693,6 +693,7 @@ font-weight: 400;
 }
 
 .template-item {
+  position: relative;
   width: 358px;
   min-height: 618px;
 }
@@ -733,11 +734,11 @@ font-weight: 400;
 }
 
 .template-item-description {
+  position: absolute;
+  bottom: 0;
   background-color: var(--basic-gray);
   text-align: center;
   width: 358px;
-  padding: 0;
-  margin: 0;
 }
 
 .template-button {
