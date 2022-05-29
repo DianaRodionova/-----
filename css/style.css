@@ -687,6 +687,7 @@ font-weight: 400;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
+  row-gap: 30px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -695,7 +696,20 @@ font-weight: 400;
 .template-item {
   position: relative;
   width: 358px;
-  min-height: 618px;
+  min-height: 578px;
+  margin: 0;
+  padding: 0;
+}
+
+.template-item-description {
+  position: absolute;
+  bottom: 0px;
+  background-color: var(--basic-gray);
+  text-align: center;
+  width: 360px;
+  min-height: 231px;
+  margin: 0;
+  padding: 0;
 }
 
 .template-item h3 {
@@ -703,6 +717,8 @@ font-weight: 400;
   line-height: 30px;
   font-weight: 700;
   margin: 0;
+  margin-top: 26px;
+  margin-bottom: 12px;
 }
 
 .template-item-title {
@@ -717,7 +733,7 @@ font-weight: 400;
   color: var(--basic-black-active);
 }
 
-.catalog-item-image {
+.template-item-image {
   width: 358px;
   height: 578px;
   margin: 0;
@@ -731,20 +747,14 @@ font-weight: 400;
   text-transform: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
 }
 
-.template-item-description {
-  position: absolute;
-  bottom: 0;
-  background-color: var(--basic-gray);
-  text-align: center;
-  width: 358px;
-}
-
-.template-button {
+/* .template-button {
   margin-top: 32px;
   margin-bottom: 44px;
 }
+*/
 
 /* Pagination */
 
