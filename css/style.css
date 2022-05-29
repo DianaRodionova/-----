@@ -139,6 +139,14 @@ h1 {
   justify-self: left;
 }
 
+.page-header-logo:hover {
+  opacity: 0.7;
+}
+
+.page-header-logo:active {
+  opacity: 0.3;
+}
+
 /* Site navigation */
 
 .page-navigation {
