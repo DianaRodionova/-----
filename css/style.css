@@ -44,6 +44,7 @@
   --basic-filter-disabled: rgba(40, 49, 54, 0.3);
   --pagination-light: #DBDBDB;
   --gray-light: #B4B9BB;
+  --gray-super-light: #C1C1C1;
   --basic-gray: #EEEEEE;
   --basic-color-gray: #E1E1E1;
   --basic-gray-light:#D7DCDE;
@@ -251,32 +252,107 @@ h1 {
 }
 
 .features {
+  position: relative;
   background-color: var(--basic-gray);
   margin-bottom: 80px;
 }
 
 .features-list {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
 .feature-item {
+  position: relative;
   text-align: left;
+}
+
+.feature-item-1::after {
+  content: "";
+  position: absolute;
+  width: 760px;
+  height: 431px;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/slides/three-iPhones.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.feature-item-2::after {
+  content: "";
+  position: absolute;
+  width: 760px;
+  height: 431px;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/slides/two-MAC-screens.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.feature-item-3::after {
+  content: "";
+  position: absolute;
+  width: 760px;
+  height: 431px;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/slides/tablet-and-iPhone.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .feature-item h3 {
   text-transform: none;
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 78px;
 }
 
 .feature-item p {
-text-transform: none;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 38px;
+}
+
+.slide-button {
+  margin-bottom: 80px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 96px;
+  left: 536px;
+  z-index: 20;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-color);
+  border: 2px solid var(--basic-color);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Button */
@@ -569,7 +645,7 @@ font-weight: 400;
   width: 81px;
   height: 81px;
   background-color: var(--basic-color-gray);
-  border-radius: 40px;
+  border-radius: 50%;
   color: inherit;
 }
 
