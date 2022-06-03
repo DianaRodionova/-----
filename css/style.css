@@ -552,24 +552,37 @@ font-weight: 400;
   margin-bottom: 76px;
 }
 
-.footer-social {
-  text-align: left;
-}
-
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 261px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.social-item {
-  padding-right: 9px;
-}
-
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 81px;
   height: 81px;
   background-color: var(--basic-color-gray);
+  border-radius: 40px;
   color: inherit;
+}
+
+.social-button:hover {
+  background-color: var(--red-hover);
+}
+
+.social-button:active {
+  background-color: var(--red-activ);
+}
+
+.social-button:active svg {
+  opacity: 0.3;
 }
 
 .promo {
