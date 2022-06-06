@@ -353,6 +353,20 @@ h1 {
   border: 2px solid var(--basic-color);
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
+}
+
+.slider-controls .current::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 2px;
+  left: 2px;
+  background-color: var(--basic-color);
+  border: 2px solid var(--gray-super-light);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Button */
@@ -804,12 +818,33 @@ h1 {
   color: var(--basic-black-active);
 }
 
+.sort-list li:not(.arrow) {
+  margin-right: 25px;
+}
+
 .sort-item a:hover {
   color: var(--basic-black-sort);
 }
 
 .sort-item a:active {
   color: var(--basic-black);
+}
+
+.sort-list .arrow {
+  margin-left: 18px;
+  opacity: 0.2;
+}
+
+.sort-list .arrow:first-child {
+  margin-left: 24px;
+}
+
+.sort-list .arrow:hover {
+  opacity: 0.5;
+}
+
+.sort-list .arrow:active {
+  opacity: 1;
 }
 
 /* Templates */
