@@ -44,9 +44,23 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend class="filter-group">Стоимость:</legend>
-            <input class="filter-input-range filter-input" type="range" id="filter" name="price" min="0" max="150000" step="1">
-            <label for="filter-price">От<input type="text" id="filter-price" name="min-price" value="0"></label>
-            <label for="filter-price">До<input type="text" id="filter-price" name="max-price" value="150 000"></label>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="150000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
             <legend class="filter-group">Сетка:</legend>
@@ -106,7 +120,7 @@
           <li class="sort-item">
             <a href="#">По названию</a>
           </li>
-          <li class="sort-item arrow">
+          <li class="sort-item arrow arrow-down">
             <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз"></a>
           </li>
           <li class="sort-item arrow">
@@ -189,7 +203,7 @@
           <li class="pagination-item">
             <a href="#">3</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item next">
             <a href="#">Следующая</a>
           </li>
         </ul>
