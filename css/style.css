@@ -734,6 +734,12 @@ h1 {
   color: var(--basic-gray-dark);
 }
 
+.close-button {
+  height: 21px;
+  width: 21px;
+  border: none;
+  background-image: url(../img/close-cross.svg);
+}
 /* Grid */
 
 .page-catalog {
