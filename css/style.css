@@ -422,19 +422,21 @@ h1 {
 }
 
 .filter-button {
+  display: block;
+  width: 100%;
   line-height: 18px;
   background-color: var(--basic-gray);
+  color: var(--basic-black);
 }
 
 .filter-button:hover {
-  line-height: 18px;
   background-color: var(--gray-hover);
 }
 
-.filter-button:hover {
-  line-height: 18px;
+.filter-button:active {
   background-color: var(--gray-activ);
   color: var(--basic-black-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /* Services */
@@ -934,7 +936,7 @@ h1 {
   grid-column: 2 / -1;
   padding: 0;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .heart-sort {
@@ -1029,6 +1031,11 @@ h1 {
 }
 
 .template-item-description {
+  display: none;
+}
+
+.template-item:hover .template-item-description {
+  display: blok;
   position: absolute;
   bottom: 0px;
   background-color: var(--basic-gray);
@@ -1108,6 +1115,12 @@ h1 {
 .pagination-item a:hover {
   color: var(--basic-black);
   background-color: var(--gray-hover);
+}
+
+.pagination-item a:active {
+  color: var(--basic-black-active);
+  background-color: var(--gray-activ);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item-current a,
