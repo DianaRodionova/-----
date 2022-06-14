@@ -761,8 +761,7 @@ h1 {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: var(--basic-gray-dark);
-  opacity: 0.5;
+  color: var(--basic-dark-hover);
   padding: 16px;
   background-color: transparent;
   border: 2px solid var(--basic-gray-light);
@@ -779,7 +778,6 @@ h1 {
 
 .appointment-item input:hover,textarea:hover {
   border: 2px solid var(--gray-light);
-  color: var(--basic-dark-hover);
 }
 
 .appointment-item input:focus,textarea:focus {
@@ -797,14 +795,29 @@ h1 {
   width: 259px;
 }
 
+/* Modal close */
+
 .close-button {
+  position: absolute;
+  top: 78px;
+  right: 90px;
   height: 21px;
   width: 21px;
+  opacity: 0.3;
   border: none;
   background-color: transparent;
   cursor: pointer;
   background-image: url(../img/close-cross.svg);
 }
+
+.close-button:hover {
+  opacity: 1;
+}
+
+.close-button:active {
+  opacity: 0.1;
+}
+
 /* Grid */
 
 .page-catalog {
