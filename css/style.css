@@ -609,6 +609,7 @@ h1 {
 /* Footer */
 
 .contacts {
+  position: relative;
   padding: 50px;
 }
 
@@ -639,6 +640,17 @@ h1 {
 
 .contacts-phones {
   margin-bottom: 37px;
+}
+
+.map img {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 416px;
+  width: 1440px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .footer-columns {
@@ -706,6 +718,7 @@ h1 {
 /* Modal */
 
 .appointment {
+  display: none;
   position: fixed;
   top: 50px;
   bottom: auto;
