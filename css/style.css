@@ -196,7 +196,7 @@ h1 {
 }
 
 .site-navigation li:not(:last-child) {
-  padding-right: 45px;
+  margin-right: 45px;
 }
 
 .site-navigation a:hover {
@@ -207,6 +207,9 @@ h1 {
   color: var(--basic-black-active);
 }
 
+.site-navigation-current {
+border-bottom: 2px solid var(--basic-red);
+}
 /* User navigation */
 
 .user-navigation {
@@ -608,7 +611,7 @@ h1 {
   height: 52px;
   background-image: url("../img/line-vertical.png");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 0 0;
 }
 
 .clients-item:nth-child(2)::before {
