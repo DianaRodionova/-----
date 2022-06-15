@@ -481,7 +481,9 @@ h1 {
   column-gap: 100px;
   margin: 0;
   padding: 0;
+  padding-top: 39px;
   margin-bottom: 73px;
+  border-top: 2px solid var(--basic-gray);
 }
 
   /* Company */
@@ -577,6 +579,8 @@ h1 {
 
 .clients {
   margin-bottom: 80px;
+  border-top: 2px solid var(--basic-gray);
+  border-bottom: 2px solid var(--basic-gray);
 }
 
 .clients-list {
@@ -590,8 +594,31 @@ h1 {
 }
 
 .clients-item {
+  position: relative;
   text-align: center;
   margin: auto;
+}
+
+.clients-item:not(:nth-child(4n))::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: -50px;
+  width: 2px;
+  height: 52px;
+  background-image: url("../img/line-vertical.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.clients-item:nth-child(2)::before {
+  top: 19px;
+  right: -46px;
+}
+
+.clients-item:nth-child(3)::before {
+  top: 0;
+  right: -58px;
 }
 
 .clients-item img {
@@ -992,7 +1019,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
-
 }
 
 .filter-input-checkbox:checked + label::after {
