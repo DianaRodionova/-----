@@ -608,12 +608,32 @@ h1 {
 
 /* Footer */
 
-.contacts {
+.contacts-map {
   position: relative;
-  padding: 50px;
+  margin: 0 auto;
+  width: 1440px;
+  display: block;
 }
 
-.contacts h3 {
+.contacts {
+  position: absolute;
+  padding: 50px;
+  top: 54px;
+  left: 140px;
+  background-color: var(--basic-color);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.marker {
+  position: absolute;
+  top: 70px;
+  right: 362px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.contacts-map h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -640,17 +660,6 @@ h1 {
 
 .contacts-phones {
   margin-bottom: 37px;
-}
-
-.map img {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  height: 416px;
-  width: 1440px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .footer-columns {
@@ -1092,6 +1101,7 @@ h1 {
   grid-column: 2 / 3;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
 }
 
 .template-list {
@@ -1177,8 +1187,8 @@ h1 {
   margin-bottom: 32px;
 }
 
-.template-item:hover .template-item-description {
-  display: blok;
+.template-item:hover .template-item-description  {
+  display: block;
 }
 
 /* .template-button {
