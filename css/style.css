@@ -640,27 +640,49 @@ border-bottom: 2px solid var(--basic-red);
 
 .contacts-map {
   position: relative;
-  margin: 0 auto;
-  width: 1440px;
-  display: block;
+  min-height: 416px;
+}
+
+.map-img {
+  position: absolute;
+  height: 416px;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.map-iframe {
+  position: absolute;
+  height: 416px;
+  width: 100%;
+  z-index: 2;
+}
+
+.contact-wrap {
+  min-height: 416px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .contacts {
   position: absolute;
   padding: 50px;
   top: 54px;
-  left: 140px;
+  left: 0;
   background-color: var(--basic-color);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 .marker {
   position: absolute;
   top: 70px;
-  right: 362px;
+  right: 222px;
   background-position: 0 0;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .contacts-map h3 {
