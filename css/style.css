@@ -1259,7 +1259,7 @@ border-bottom: 2px solid var(--basic-red);
   height: 578px;
   margin: 0;
   object-fit: contain;
-  background-color: var(--basic-dark);
+  background-color: var(--basic-color-gray);
 }
 
 .info-site {
