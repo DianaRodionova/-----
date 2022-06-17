@@ -155,7 +155,8 @@ h1 {
 }
 
 .page-header-logo {
-  justify-self: left;
+  width: 160px;
+  height: 66px;
 }
 
 .page-header-logo:hover {
@@ -170,14 +171,10 @@ h1 {
 
 .page-navigation {
   display: grid;
-}
-
-.page-navigation-wrapper {
-  display: grid;
   grid-template-columns: 160px 1fr min-content;
   width: 1160px;
   margin: 0 auto;
-  padding-top: 49px;
+  margin-top: 49px;
   gap: 25px;
   font-size: 16px;
   line-height: 30px;
@@ -192,11 +189,13 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 0;
-  min-height: 65px;
+  min-height: 66px;
+  margin-right: 35px;
 }
 
-.site-navigation li:not(:last-child) {
-  margin-right: 45px;
+.site-navigation li {
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 .site-navigation a:hover {
@@ -220,7 +219,7 @@ border-bottom: 2px solid var(--basic-red);
 .user-navigation a {
   color: var(--basic-black);
   display: block;
-  padding-top: 28px;
+  padding-top: 27px;
 }
 
 .user-navigation a:hover {
@@ -274,32 +273,6 @@ border-bottom: 2px solid var(--basic-red);
 
 .button:active {
   background-color: var(--red-activ);
-  color: var(--basic-color-active);
-}
-
-.button-green {
-  background-color: var(--button-basic-green);
-}
-
-.button-green:hover {
-  background-color: var(--button-app-hover);
-}
-
-.button-green:active {
-  background-color: var(--button-app-activ);
-  color: var(--basic-color-active);
-}
-
-.button-yellow {
-  background-color: var(--button-basic-yellow);
-}
-
-.button-yellow:hover {
-  background-color: var(--button-presentation-hover);
-}
-
-.button-yellow:active {
-  background-color: var(--button-presentation-activ);
   color: var(--basic-color-active);
 }
 
@@ -357,8 +330,8 @@ border-bottom: 2px solid var(--basic-red);
   position: absolute;
   width: 760px;
   height: 431px;
-  right: 0;
-  bottom: 0;
+  right: 4px;
+  bottom: -2px;
   background-image: url("../img/slides/three-iPhones.png");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -399,10 +372,11 @@ border-bottom: 2px solid var(--basic-red);
 
 .feature-item p {
   text-transform: none;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
   margin: 0;
+  padding: 0;
   margin-top: 25px;
   margin-bottom: 38px;
 }
@@ -418,7 +392,6 @@ border-bottom: 2px solid var(--basic-red);
   z-index: 20;
   display: flex;
   width: 88px;
-  justify-content: space-between;
 }
 
 .slider-controls button {
@@ -430,6 +403,10 @@ border-bottom: 2px solid var(--basic-red);
   border-radius: 50%;
   cursor: pointer;
   position: relative;
+}
+
+.slider-controls button:not(:last-child) {
+  margin-right: 17px;
 }
 
 .slider-controls .current::after {
@@ -448,12 +425,12 @@ border-bottom: 2px solid var(--basic-red);
 /* Services */
 
 .services {
-  margin-bottom: 91px;
+  margin-bottom: 80px;
 }
 
 .services-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px;
   column-gap: 100px;
   margin: 0;
   padding: 0;
@@ -461,14 +438,28 @@ border-bottom: 2px solid var(--basic-red);
 }
 
 .services-item {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.services-item img {
+  width: 300px;
+  height: 145px;
+  margin-bottom: 25px;
+}
+
+.services-item:first-child img {
+  border: 1px solid var(--basic-black);
+  box-sizing: border-box;
 }
 
 .services-item h3 {
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
-  margin-top: 25px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .services-item p {
@@ -476,8 +467,38 @@ border-bottom: 2px solid var(--basic-red);
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 16px;
+  margin: 0;
   margin-bottom: 32px;
+}
+
+.button-red, .button-green, .button-yellow {
+ padding: 16px 40px;
+}
+
+.button-green {
+  background-color: var(--button-basic-green);
+}
+
+.button-green:hover {
+  background-color: var(--button-app-hover);
+}
+
+.button-green:active {
+  background-color: var(--button-app-activ);
+  color: var(--basic-color-active);
+}
+
+.button-yellow {
+  background-color: var(--button-basic-yellow);
+}
+
+.button-yellow:hover {
+  background-color: var(--button-presentation-hover);
+}
+
+.button-yellow:active {
+  background-color: var(--button-presentation-activ);
+  color: var(--basic-color-active);
 }
 
   /* index-column */
@@ -543,19 +564,29 @@ border-bottom: 2px solid var(--basic-red);
 
 /* Statistics */
 
-.statistics h3 {
+.statistics {
+  max-width: 360px;
+}
+
+.statistics img {
+  width: 360px;
+  height: 208px;
+  margin-bottom: 26px;
+}
+
+.statistics p {
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
   text-align: center;
-  margin-top: 37px;
+  margin: 0;
   margin-bottom: 31px;
 }
 
 .statistics dl {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  column-gap: 0px;
   row-gap: 10px;
   margin: 0;
   padding: 0;
@@ -586,7 +617,7 @@ border-bottom: 2px solid var(--basic-red);
 
 .clients {
   margin-bottom: 80px;
-  padding: 40px 0;
+  padding: 46px 0 36px;
   border-top: 2px solid var(--basic-gray);
   border-bottom: 2px solid var(--basic-gray);
 }
@@ -610,8 +641,8 @@ border-bottom: 2px solid var(--basic-red);
 .clients-item:not(:nth-child(4n))::before {
   position: absolute;
   content: "";
-  top: 5px;
-  right: -50px;
+  top: 2px;
+  right: -51px;
   width: 2px;
   height: 52px;
   background-image: url("../img/line-vertical.png");
@@ -620,7 +651,7 @@ border-bottom: 2px solid var(--basic-red);
 }
 
 .clients-item:nth-child(2)::before {
-  top: 19px;
+  top: 18px;
   right: -46px;
 }
 
@@ -674,7 +705,9 @@ border-bottom: 2px solid var(--basic-red);
 
 .contacts {
   position: absolute;
-  padding: 50px;
+  display: block;
+  max-width: 319px;
+  padding: 48px 50px;
   top: 54px;
   left: 0;
   background-color: var(--basic-color);
@@ -717,6 +750,10 @@ border-bottom: 2px solid var(--basic-red);
 
 .contacts-phones {
   margin-bottom: 37px;
+}
+
+.button-contacts {
+  padding: 16px 44px;
 }
 
 .footer-columns {
@@ -770,8 +807,8 @@ border-bottom: 2px solid var(--basic-red);
   line-height: 36px;
   font-weight: 700;
   text-transform: none;
-  padding: 0;
   margin: 0;
+  margin-top: 6px;
 }
 
 .promo-text {
@@ -779,6 +816,8 @@ border-bottom: 2px solid var(--basic-red);
   line-height: 22px;
   font-weight: 400;
   text-transform: none;
+  margin: 0;
+  margin-top: 10px;
 }
 
 /* Modal */
