@@ -331,7 +331,7 @@ border-bottom: 2px solid var(--basic-red);
   width: 760px;
   height: 431px;
   right: 4px;
-  bottom: -2px;
+  bottom: 0;
   background-image: url("../img/slides/three-iPhones.png");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -559,7 +559,19 @@ border-bottom: 2px solid var(--basic-red);
 }
 
 .company-item {
+  position: relative;
   margin-top: 24px;
+  padding-left: 36px;
+}
+
+.company-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 11px;
+  left: 0px;
+  background-image: url(../img/line-company.svg);
 }
 
 /* Statistics */
@@ -823,19 +835,20 @@ border-bottom: 2px solid var(--basic-red);
 /* Modal */
 
 .appointment {
-  display: none;
+  display: block;
   position: fixed;
   top: 50px;
   bottom: auto;
   right: 0;
   left: 0;
   width: 760px;
-  padding: 60px 100px;
+  padding: 63px 100px 84px;
   margin: auto;
   background-color: var(--basic-color);
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 3;
 }
 
 .appointment-form {
@@ -853,10 +866,15 @@ border-bottom: 2px solid var(--basic-red);
   grid-column: 1/3;
 }
 
+.appointment-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .appointment h2 {
+  font-weight: 700;
   font-size: 45px;
   line-height: 53px;
-  font-weight: 700;
   text-transform: none;
   margin: 0;
   margin-bottom: 37px;
@@ -871,7 +889,7 @@ border-bottom: 2px solid var(--basic-red);
   line-height: 18px;
   font-weight: 700;
   text-transform: none;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .appointment-item input,textarea {
@@ -880,18 +898,21 @@ border-bottom: 2px solid var(--basic-red);
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-dark-hover);
-  padding: 16px;
+  box-sizing: border-box;
+  padding: 16px 14px 14px 16px;
   background-color: transparent;
   border: 2px solid var(--basic-gray-light);
+  border-radius: 3px;
 }
 
 .appointment-form input {
-  width: 328px;
+  width: 360px;
 }
 
 .appointment-item textarea {
   resize: none;
-  width: 728px;
+  width: 760px;
+  min-height: 118px;
  }
 
 .appointment-item input:hover,textarea:hover {
@@ -1123,7 +1144,7 @@ border-bottom: 2px solid var(--basic-red);
   content: "";
   position: absolute;
   top: 7px;
-  left: -27px;
+  left: -28px;
   width: 9px;
   height: 9px;
   background-color: var(--basic-filter);
