@@ -835,7 +835,7 @@ border-bottom: 2px solid var(--basic-red);
 /* Modal */
 
 .appointment {
-  display: block;
+  display: none;
   position: fixed;
   top: 50px;
   bottom: auto;
@@ -1094,14 +1094,6 @@ border-bottom: 2px solid var(--basic-red);
   user-select: none;
 }
 
-.filter-input:hover + label {
-  color: var(--basic-extra-dark);
-}
-
-.filter-input:disabled + label {
-  color: var(--basic-filter-disabled);
-}
-
 .filter-input-checkbox:not(:checked) + label::before {
   content: "";
   position: absolute;
@@ -1152,6 +1144,32 @@ border-bottom: 2px solid var(--basic-red);
   opacity: 0.4;
 }
 
+.filter-input-checkbox:hover + label::after,
+.filter-input-checkbox:hover + label::before,
+.filter-input-radio:hover + label::after,
+.filter-input-radio:hover + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::after,
+.filter-input-checkbox:disabled + label::before,
+.filter-input-radio:disabled + label::after,
+.filter-input-radio:disabled + label::before {
+  opacity: 0.1;
+}
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after,
+.filter-input-radio:focus + label::after,
+.filter-input-radio:focus + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:focus:checked + label::before,
+.filter-input-checkbox:focus:checked + label::after,
+.filter-input-radio:focus:checked + label::after {
+  outline: 0px solid var(--basic-black);
+}
 /* Sort */
 
 .sort {
