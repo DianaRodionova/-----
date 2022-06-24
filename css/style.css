@@ -934,6 +934,10 @@ border-bottom: 2px solid var(--basic-red);
   width: 259px;
 }
 
+.modal-show {
+  display: block;
+}
+
 /* Modal close */
 
 .close-button {
