@@ -312,17 +312,10 @@ border-bottom: 2px solid var(--basic-red);
   list-style: none;
 }
 
-.slide {
-  display: none;
-}
-
-.slide-current {
-  display: block;
-}
-
 .feature-item {
   position: relative;
   text-align: left;
+  display: none;
 }
 
 .feature-item-1::after {
@@ -379,6 +372,10 @@ border-bottom: 2px solid var(--basic-red);
   padding: 0;
   margin-top: 25px;
   margin-bottom: 38px;
+}
+
+.slide-current {
+  display: block;
 }
 
 .slide-button {

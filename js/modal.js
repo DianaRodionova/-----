@@ -43,6 +43,8 @@ modalClose.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!namePopup.value || !emailPopup.value) {
     evt.preventDefault();
+    contactsPopup.classList.remove("modal-error");
+    contactsPopup.offsetWidth = contactsPopup.offsetWidth;
     contactsPopup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
