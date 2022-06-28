@@ -837,13 +837,15 @@ border-bottom: 2px solid var(--basic-red);
 .appointment {
   display: none;
   position: fixed;
-  top: 50px;
-  bottom: auto;
+  top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
-  width: 760px;
+  width: 960px;
+  height: 590px;
   padding: 63px 100px 84px;
   margin: auto;
+  box-sizing: border-box;
   background-color: var(--basic-color);
   background-position: 0 0;
   background-repeat: repeat;
